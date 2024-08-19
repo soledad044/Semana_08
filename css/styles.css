@@ -1,0 +1,49 @@
+/* Configuración básica del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Celeste muy claro */
+    color: #333; /* Color de texto oscuro para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  /* Contenedor principal */
+  #container {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; /* Tamaño máximo */
+    text-align: center;
+  }
+  
+  /* Estilo de los párrafos */
+  #container p {
+    font-size: 18px;
+    color: #007bff; /* Azul brillante para texto */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para efectos */
+  }
+  
+  /* Efecto al pasar el ratón por encima */
+  #container p:hover {
+    background-color: #e7f0ff; /* Celeste claro */
+    color: #0056b3; /* Azul más oscuro para texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  /* Estilo del título */
+  h1 {
+    font-size: 2em;
+    color: #0056b3; /* Azul oscuro */
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
