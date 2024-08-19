@@ -24,9 +24,12 @@ fetch(DATA_URL)
     return response.json();
   })
   .then(data => {
-    showData(data); // Llama a la función showData pasando los datos obtenidos
+    if (data.students && Array.isArray(data.students)) {
+      showData(data.students); // Llama a la función showData pasando el array de estudiantes
+    } else {
+      console.error('No se encontraron datos de estudiantes en el archivo.');
+    }
   })
   .catch(error => {
     console.error('Hubo un problema al intentar cargar los datos:', error);
-
   });
